@@ -10,3 +10,10 @@ crate-type = ["staticlib"]
 
 [dependencies]
 libc = "0.2.149"
+serde = { version = "1.0.190", features = ["derive"] }
+serde_json = "1.0.108"
+protobuf = "3.3.0"
+
+[build-dependencies]
+protobuf-codegen = "3.3.0"
+protoc-rust = "2.28.0"

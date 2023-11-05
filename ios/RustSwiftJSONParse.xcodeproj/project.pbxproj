@@ -7,17 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF34ABA02AF68759007793B4 /* SimpleStatusJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF34AB9F2AF68759007793B4 /* SimpleStatusJSON.swift */; };
+		FF34ABA22AF68CAC007793B4 /* BigJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF34ABA12AF68CAC007793B4 /* BigJSON.swift */; };
+		FF399F152AF6787D00018965 /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = FF399F142AF6787D00018965 /* SwiftProtobuf */; };
+		FF399F172AF6787D00018965 /* SwiftProtobufPluginLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = FF399F162AF6787D00018965 /* SwiftProtobufPluginLibrary */; };
+		FF399F1B2AF6793F00018965 /* simple_status.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF399F1A2AF6793F00018965 /* simple_status.pb.swift */; };
+		FF399F232AF67C1C00018965 /* RustSwiftJSONParseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF399F222AF67C1C00018965 /* RustSwiftJSONParseTests.swift */; };
 		FF5D982E2AF51EBC004DD514 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5D982D2AF51EBC004DD514 /* AppDelegate.swift */; };
 		FF5D98302AF51EBC004DD514 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5D982F2AF51EBC004DD514 /* SceneDelegate.swift */; };
 		FF5D98322AF51EBC004DD514 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5D98312AF51EBC004DD514 /* ViewController.swift */; };
 		FF5D98352AF51EBC004DD514 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5D98332AF51EBC004DD514 /* Main.storyboard */; };
 		FF5D98372AF51EBF004DD514 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5D98362AF51EBF004DD514 /* Assets.xcassets */; };
 		FF5D983A2AF51EBF004DD514 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5D98382AF51EBF004DD514 /* LaunchScreen.storyboard */; };
+		FFE8B21B2AF684FA00A51E11 /* librustengine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE8B21A2AF684E700A51E11 /* librustengine.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FF399F242AF67C1C00018965 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF5D98222AF51EBC004DD514 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF5D98292AF51EBC004DD514;
+			remoteInfo = RustSwiftJSONParse;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		FF247AEA2AF52C41007E0CCB /* librustengine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librustengine.a; path = ../rustengine/target/debug/librustengine.a; sourceTree = "<group>"; };
-		FF247AEB2AF52DCC007E0CCB /* rust_engine_header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rust_engine_header.h; path = ../../rustengine/header/rust_engine_header.h; sourceTree = "<group>"; };
+		FF34AB9F2AF68759007793B4 /* SimpleStatusJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStatusJSON.swift; sourceTree = "<group>"; };
+		FF34ABA12AF68CAC007793B4 /* BigJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigJSON.swift; sourceTree = "<group>"; };
+		FF399F1A2AF6793F00018965 /* simple_status.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = simple_status.pb.swift; sourceTree = "<group>"; };
+		FF399F202AF67C1C00018965 /* RustSwiftJSONParseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RustSwiftJSONParseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF399F222AF67C1C00018965 /* RustSwiftJSONParseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RustSwiftJSONParseTests.swift; sourceTree = "<group>"; };
 		FF5D982A2AF51EBC004DD514 /* RustSwiftJSONParse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RustSwiftJSONParse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF5D982D2AF51EBC004DD514 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF5D982F2AF51EBC004DD514 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,13 +46,24 @@
 		FF5D98362AF51EBF004DD514 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF5D98392AF51EBF004DD514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF5D983B2AF51EBF004DD514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFE8B21A2AF684E700A51E11 /* librustengine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librustengine.a; path = "../rustengine/target/aarch64-apple-ios-sim/release/librustengine.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FF399F1D2AF67C1C00018965 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF5D98272AF51EBC004DD514 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF399F172AF6787D00018965 /* SwiftProtobufPluginLibrary in Frameworks */,
+				FFE8B21B2AF684FA00A51E11 /* librustengine.a in Frameworks */,
+				FF399F152AF6787D00018965 /* SwiftProtobuf in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,15 +73,41 @@
 		FF247AE92AF52C41007E0CCB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FF247AEA2AF52C41007E0CCB /* librustengine.a */,
+				FFE8B21A2AF684E700A51E11 /* librustengine.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF34AB9E2AF68743007793B4 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				FF34AB9F2AF68759007793B4 /* SimpleStatusJSON.swift */,
+				FF34ABA12AF68CAC007793B4 /* BigJSON.swift */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		FF399F192AF6793F00018965 /* Protos */ = {
+			isa = PBXGroup;
+			children = (
+				FF399F1A2AF6793F00018965 /* simple_status.pb.swift */,
+			);
+			path = Protos;
+			sourceTree = "<group>";
+		};
+		FF399F212AF67C1C00018965 /* RustSwiftJSONParseTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF399F222AF67C1C00018965 /* RustSwiftJSONParseTests.swift */,
+			);
+			path = RustSwiftJSONParseTests;
 			sourceTree = "<group>";
 		};
 		FF5D98212AF51EBB004DD514 = {
 			isa = PBXGroup;
 			children = (
 				FF5D982C2AF51EBC004DD514 /* RustSwiftJSONParse */,
+				FF399F212AF67C1C00018965 /* RustSwiftJSONParseTests */,
 				FF5D982B2AF51EBC004DD514 /* Products */,
 				FF247AE92AF52C41007E0CCB /* Frameworks */,
 			);
@@ -60,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				FF5D982A2AF51EBC004DD514 /* RustSwiftJSONParse.app */,
+				FF399F202AF67C1C00018965 /* RustSwiftJSONParseTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,7 +125,8 @@
 		FF5D982C2AF51EBC004DD514 /* RustSwiftJSONParse */ = {
 			isa = PBXGroup;
 			children = (
-				FF247AEB2AF52DCC007E0CCB /* rust_engine_header.h */,
+				FF34AB9E2AF68743007793B4 /* JSON */,
+				FF399F192AF6793F00018965 /* Protos */,
 				FF5D982D2AF51EBC004DD514 /* AppDelegate.swift */,
 				FF5D982F2AF51EBC004DD514 /* SceneDelegate.swift */,
 				FF5D98312AF51EBC004DD514 /* ViewController.swift */,
@@ -82,10 +141,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FF399F1F2AF67C1C00018965 /* RustSwiftJSONParseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF399F262AF67C1C00018965 /* Build configuration list for PBXNativeTarget "RustSwiftJSONParseTests" */;
+			buildPhases = (
+				FF399F1C2AF67C1C00018965 /* Sources */,
+				FF399F1D2AF67C1C00018965 /* Frameworks */,
+				FF399F1E2AF67C1C00018965 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF399F252AF67C1C00018965 /* PBXTargetDependency */,
+			);
+			name = RustSwiftJSONParseTests;
+			productName = RustSwiftJSONParseTests;
+			productReference = FF399F202AF67C1C00018965 /* RustSwiftJSONParseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FF5D98292AF51EBC004DD514 /* RustSwiftJSONParse */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF5D983E2AF51EBF004DD514 /* Build configuration list for PBXNativeTarget "RustSwiftJSONParse" */;
 			buildPhases = (
+				FFC845E72AF6374B00EB40E9 /* Build Protos */,
 				FF247AE82AF52C10007E0CCB /* Build Rust */,
 				FF5D98262AF51EBC004DD514 /* Sources */,
 				FF5D98272AF51EBC004DD514 /* Frameworks */,
@@ -96,6 +174,10 @@
 			dependencies = (
 			);
 			name = RustSwiftJSONParse;
+			packageProductDependencies = (
+				FF399F142AF6787D00018965 /* SwiftProtobuf */,
+				FF399F162AF6787D00018965 /* SwiftProtobufPluginLibrary */,
+			);
 			productName = RustSwiftJSONParse;
 			productReference = FF5D982A2AF51EBC004DD514 /* RustSwiftJSONParse.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +192,10 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					FF399F1F2AF67C1C00018965 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = FF5D98292AF51EBC004DD514;
+					};
 					FF5D98292AF51EBC004DD514 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
@@ -124,16 +210,27 @@
 				Base,
 			);
 			mainGroup = FF5D98212AF51EBB004DD514;
+			packageReferences = (
+				FF399F132AF6787D00018965 /* XCRemoteSwiftPackageReference "swift-protobuf" */,
+			);
 			productRefGroup = FF5D982B2AF51EBC004DD514 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				FF5D98292AF51EBC004DD514 /* RustSwiftJSONParse */,
+				FF399F1F2AF67C1C00018965 /* RustSwiftJSONParseTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FF399F1E2AF67C1C00018965 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF5D98282AF51EBC004DD514 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -166,20 +263,59 @@
 			shellPath = /bin/sh;
 			shellScript = "bash ${PROJECT_DIR}/scripts/build_rust_engine.sh $ENGINE_BUILD_VARIANT\n";
 		};
+		FFC845E72AF6374B00EB40E9 /* Build Protos */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Protos";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash ${PROJECT_DIR}/scripts/build_protos.sh\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FF399F1C2AF67C1C00018965 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF399F232AF67C1C00018965 /* RustSwiftJSONParseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF5D98262AF51EBC004DD514 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FF5D98322AF51EBC004DD514 /* ViewController.swift in Sources */,
+				FF34ABA02AF68759007793B4 /* SimpleStatusJSON.swift in Sources */,
 				FF5D982E2AF51EBC004DD514 /* AppDelegate.swift in Sources */,
+				FF399F1B2AF6793F00018965 /* simple_status.pb.swift in Sources */,
+				FF34ABA22AF68CAC007793B4 /* BigJSON.swift in Sources */,
 				FF5D98302AF51EBC004DD514 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF399F252AF67C1C00018965 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF5D98292AF51EBC004DD514 /* RustSwiftJSONParse */;
+			targetProxy = FF399F242AF67C1C00018965 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FF5D98332AF51EBC004DD514 /* Main.storyboard */ = {
@@ -201,6 +337,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FF399F272AF67C1C00018965 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.RustSwiftJSONParseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RustSwiftJSONParse.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RustSwiftJSONParse";
+			};
+			name = Debug;
+		};
+		FF399F282AF67C1C00018965 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.RustSwiftJSONParseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RustSwiftJSONParse.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RustSwiftJSONParse";
+			};
+			name = Release;
+		};
 		FF5D983C2AF51EBF004DD514 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -239,6 +409,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENGINE_BUILD_VARIANT = debug;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -254,12 +425,16 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*][arch=arm64]" = "$(PROJECT_DIR)/../rustengine/target/aarch64-apple-ios/debug";
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*][arch=arm64]" = "$(PROJECT_DIR)/../rustengine/target/aarch64-apple-ios-sim/debug";
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*][arch=x86_64]" = "$(PROJECT_DIR)/../rustengine/target/x86_64-apple-ios/debug";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/../rustengine/header/rust_engine_header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -301,7 +476,9 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENGINE_BUILD_VARIANT = release;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -311,11 +488,15 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*][arch=arm64]" = "$(PROJECT_DIR)/../rustengine/target/aarch64-apple-ios/release";
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*][arch=arm64]" = "$(PROJECT_DIR)/../rustengine/target/aarch64-apple-ios-sim/release";
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*][arch=x86_64]" = "$(PROJECT_DIR)/../rustengine/target/x86_64-apple-ios/release";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/../rustengine/header/rust_engine_header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -328,7 +509,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				ENGINE_BUILD_VARIANT = debug;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RustSwiftJSONParse/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -340,14 +520,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*][arch=arm64]" = "$(PROJECT_DIR)/../rustengine/target/aarch64-apple-ios/debug";
-				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*][arch=arm64]" = "$(PROJECT_DIR)/../rustengine/target/aarch64-apple-ios-sim/debug";
-				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*][arch=x86_64]" = "$(PROJECT_DIR)/../rustengine/target/x86_64-apple-ios/debug";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.RustSwiftJSONParse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/../rustengine/header/rust_engine_header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -361,7 +537,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				ENGINE_BUILD_VARIANT = release;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RustSwiftJSONParse/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -373,14 +548,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*][arch=arm64]" = "$(PROJECT_DIR)/../rustengine/target/aarch64-apple-ios/release";
-				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*][arch=arm64]" = "$(PROJECT_DIR)/../rustengine/target/aarch64-apple-ios-sim/release";
-				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*][arch=x86_64]" = "$(PROJECT_DIR)/../rustengine/target/x86_64-apple-ios/release";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.RustSwiftJSONParse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/../rustengine/header/rust_engine_header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -389,6 +560,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FF399F262AF67C1C00018965 /* Build configuration list for PBXNativeTarget "RustSwiftJSONParseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF399F272AF67C1C00018965 /* Debug */,
+				FF399F282AF67C1C00018965 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FF5D98252AF51EBC004DD514 /* Build configuration list for PBXProject "RustSwiftJSONParse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -408,6 +588,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FF399F132AF6787D00018965 /* XCRemoteSwiftPackageReference "swift-protobuf" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-protobuf.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.25.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FF399F142AF6787D00018965 /* SwiftProtobuf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF399F132AF6787D00018965 /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobuf;
+		};
+		FF399F162AF6787D00018965 /* SwiftProtobufPluginLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF399F132AF6787D00018965 /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobufPluginLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FF5D98222AF51EBC004DD514 /* Project object */;
 }
