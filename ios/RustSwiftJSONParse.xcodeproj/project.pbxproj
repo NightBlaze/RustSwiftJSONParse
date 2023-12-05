@@ -19,6 +19,7 @@
 		FF5D98352AF51EBC004DD514 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5D98332AF51EBC004DD514 /* Main.storyboard */; };
 		FF5D98372AF51EBF004DD514 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5D98362AF51EBF004DD514 /* Assets.xcassets */; };
 		FF5D983A2AF51EBF004DD514 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5D98382AF51EBF004DD514 /* LaunchScreen.storyboard */; };
+		FFE7FF912B1F7E7000EEBA5A /* big_json.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE7FF902B1F7E7000EEBA5A /* big_json.pb.swift */; };
 		FFE8B21B2AF684FA00A51E11 /* librustengine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE8B21A2AF684E700A51E11 /* librustengine.a */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		FF5D98362AF51EBF004DD514 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF5D98392AF51EBF004DD514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF5D983B2AF51EBF004DD514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFE7FF902B1F7E7000EEBA5A /* big_json.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = big_json.pb.swift; sourceTree = "<group>"; };
 		FFE8B21A2AF684E700A51E11 /* librustengine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librustengine.a; path = "../rustengine/target/aarch64-apple-ios-sim/release/librustengine.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,7 @@
 		FF399F192AF6793F00018965 /* Protos */ = {
 			isa = PBXGroup;
 			children = (
+				FFE7FF902B1F7E7000EEBA5A /* big_json.pb.swift */,
 				FF399F1A2AF6793F00018965 /* simple_status.pb.swift */,
 			);
 			path = Protos;
@@ -280,7 +283,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "bash ${PROJECT_DIR}/scripts/build_protos.sh\n";
+			shellScript = "# bash ${PROJECT_DIR}/scripts/build_protos.sh\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -301,6 +304,7 @@
 				FF5D98322AF51EBC004DD514 /* ViewController.swift in Sources */,
 				FF34ABA02AF68759007793B4 /* SimpleStatusJSON.swift in Sources */,
 				FF5D982E2AF51EBC004DD514 /* AppDelegate.swift in Sources */,
+				FFE7FF912B1F7E7000EEBA5A /* big_json.pb.swift in Sources */,
 				FF399F1B2AF6793F00018965 /* simple_status.pb.swift in Sources */,
 				FF34ABA22AF68CAC007793B4 /* BigJSON.swift in Sources */,
 				FF5D98302AF51EBC004DD514 /* SceneDelegate.swift in Sources */,

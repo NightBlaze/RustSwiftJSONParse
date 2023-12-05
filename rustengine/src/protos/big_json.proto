@@ -1,0 +1,55 @@
+syntax = "proto3";
+
+message BigJson {
+	repeated Result result = 1;
+}
+
+message Result {
+    string status = 1;
+    Name name = 2;
+    string username = 3;
+    string password = 4;
+    optional string phoneNumber = 5;
+    repeated string emails = 6;
+    Location location = 7;
+    string website = 8;
+    string domain = 9;
+    Job job = 10;
+    CreditCard creditCard = 11;
+    string uuid = 12;
+    string objectId = 13;
+}
+
+message Name {
+    string first = 1;
+    string middle = 2;
+    string last = 3;
+}
+
+message Location {
+    string street = 1;
+    string city = 2;
+    string state = 3;
+    string country = 4;
+    string zip = 5;
+    Coordinates coordinates = 6;
+}
+
+message Coordinates {
+    double latitude = 1;
+    double longitude = 2;
+}
+
+message Job {
+    string title = 1;
+    string descriptor = 2;
+    string area = 3;
+    string type = 4;
+    string company = 5;
+}
+
+message CreditCard {
+    string number = 1;
+    string cvv = 2;
+    string issuer = 3;
+}

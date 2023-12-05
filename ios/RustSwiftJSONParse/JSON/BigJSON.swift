@@ -15,7 +15,7 @@ struct BigJSONResultNative: Decodable {
     let status: String
     let username: String
     let password: String
-    let phoneNumber: String
+    let phoneNumber: String?
     let website: String
     let domain: String
     let uuid: String
@@ -77,7 +77,6 @@ let bigJSONData = """
         "Amira.Spinka@gmail.com",
         "Alexandria62@gmail.com"
       ],
-      "phoneNumber": "246-225-0468 x08985",
       "location": {
         "street": "19133 Haley Ranch",
         "city": "The Woodlands",

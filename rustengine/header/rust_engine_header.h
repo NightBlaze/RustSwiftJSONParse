@@ -11,3 +11,5 @@ typedef struct RustByteSlice {
 void rust_destroy_byte_slice(struct RustByteSlice *slice);
 
 struct RustByteSlice *rust_parse_simple_status_json(const uint8_t *bytes, size_t len);
+
+struct RustByteSlice *rust_parse_big_json(const uint8_t *bytes, size_t len);
